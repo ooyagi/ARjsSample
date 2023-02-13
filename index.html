@@ -3,10 +3,11 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 	<script>
-		var el1 = Document.getElementById("1");
-		var el2 = Document.getElementById("2");
-		var el3 = Document.getElementById("3");
-		var el4 = Document.getElementById("4");
+		window.onload = () => {
+		var el1 = document.getElementById("1");
+		var el2 = document.getElementById("2");
+		var el3 = document.getElementById("3");
+		var el4 = document.getElementById("4");
 
 		el1.addEventListener("markerFound", () => { console.log("found 1")});
 		el2.addEventListener("markerFound", () => { console.log("found 2")});
@@ -16,6 +17,7 @@
 		el2.addEventListener("markerLost", () => { console.log("found 2")});
 		el3.addEventListener("markerLost", () => { console.log("found 3")});
 		el4.addEventListener("markerLost", () => { console.log("found 4")});
+		}
 	</script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
