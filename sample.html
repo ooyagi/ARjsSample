@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+			<a-marker type="pattern" preset="custom" url="./pattern-1.patt">
+        <a-box position="0 0.5 0" wireframe="true"></a-box>
+			</a-marker>
+			<a-marker type="pattern" preset="custom" url="./pattern-2.patt">
+        <a-box position="0 0.5 0" wireframe="true"></a-box>
+			</a-marker>
+			<a-marker type="pattern" preset="custom" url="./pattern-3.patt">
+        <a-box position="0 0.5 0" wireframe="true"></a-box>
+			</a-marker>
+			<a-marker type="pattern" preset="custom" url="./pattern-4.patt">
+        <a-box position="0 0.5 0" wireframe="true"></a-box>
+			</a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
